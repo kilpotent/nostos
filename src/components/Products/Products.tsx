@@ -1,4 +1,5 @@
 import "./Products.css";
+import bottlesImage from "../../assets/icons/bottles-image.png";
 
 // Ορίζουμε το "σχήμα" των δεδομένων μας με TypeScript interface.
 // Γιατί: το TypeScript θα μας προειδοποιήσει αν ξεχάσουμε ένα πεδίο
@@ -10,7 +11,7 @@ function Products() {
         <h2 className="section-title mb-5">OUR PRODUCTS</h2>
 
         <img
-          src="/src/assets/icons/bottles-image.png"
+          src={bottlesImage}
           alt="Nostos Ritual - Greek tsipouro bottle with glass and olives"
           className="d-block mx-auto products-image"
         />

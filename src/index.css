@@ -1,28 +1,28 @@
 @font-face {
   font-family: "Times-normal";
-  src: url("./src/assets/fonts/UB05RUN.TTF") format("truetype");
+  src: url("./assets/fonts/UB05RUN.TTF") format("truetype");
 }
 
 @font-face {
   font-family: "Times-bold";
-  src: url("./src/assets/fonts/UB05BUN.TTF") format("truetype");
+  src: url("./assets/fonts/UB05BUN.TTF") format("truetype");
 }
 
 @font-face {
   font-family: "Times-italic";
-  src: url("./src/assets/fonts/UB05IUN.TTF") format("truetype");
+  src: url("./assets/fonts/UB05IUN.TTF") format("truetype");
 }
 
 @font-face {
   font-family: "Wondeur-normal";
-  src: url("src/assets/fonts/WONDEUR-WONDEUR-REGULAR-400.OTF");
+  src: url("./assets/fonts/WONDEUR-WONDEUR-REGULAR-400.OTF");
   font-weight: 400;
   font-style: normal;
 }
 
 @font-face {
   font-family: "Wondeur-italic";
-  src: url("src/assets/fonts/WONDEUR-WONDEUR-REGULAR-ITALIC-400.OTF");
+  src: url("./assets/fonts/WONDEUR-WONDEUR-REGULAR-ITALIC-400.OTF");
 }
 
 /* CSS custom properties (μεταβλητές). Το ":root" σημαίνει "ισχύει σε όλη τη σελίδα".
