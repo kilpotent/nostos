@@ -1,6 +1,6 @@
 import "./About.css";
-import vineyardsImage from "../../assets/images.vineyards.jpg";
-import drunkpaImage from "../../assets/images.drunkpa.jpg";
+import vineyardsImage from "../../assets/images/vineyards.jpg";
+import drunkpaImage from "../../assets/images/drunkpa.jpg";
 
 function About() {
   return (
