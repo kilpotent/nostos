@@ -1,4 +1,6 @@
 import "./About.css";
+import vineyardsImage from "../../assets/images.vineyards.jpg";
+import drunkpaImage from "../../assets/images.drunkpa.jpg";
 
 function About() {
   return (
@@ -9,14 +11,14 @@ function About() {
         <div className="row g-0">
           <div className="col-6 col-md-6">
             <img
-              src="/src/assets/images/vineyards.jpg"
+              src={vineyardsImage}
               alt="Greek vineyard landscape at sunrise"
               className="about-image"
             />
           </div>
           <div className="col-6 col-md-6">
             <img
-              src="/src/assets/images/drunkpa.jpg"
+              src={drunkpaImage}
               alt="Traditional Greek tavern scene"
               className="about-image"
             />

@@ -1,5 +1,5 @@
-// src/components/Footer/Footer.tsx
 import "./Footer.css";
+import nostosFooterLogo from "../../icons/logo-02.png";
 
 function Footer() {
   return (
@@ -12,7 +12,7 @@ function Footer() {
         <div className="row align-items-center">
           <div className="col-md-4 mb-4 mb-md-0">
             <img
-              src="/src/assets/icons/logo-02.png"
+              src={nostosFooterLogo}
               alt="Nostos Ritual logo"
               className="footer-logo-icon"
             />

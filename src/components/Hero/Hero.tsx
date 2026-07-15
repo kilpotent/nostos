@@ -1,5 +1,6 @@
 import Navbar from "../Navbar/Navbar";
 import "./Hero.css";
+import heroImage from "../../assets/images/hero.jpg";
 
 function Hero() {
   return (
@@ -12,7 +13,7 @@ function Hero() {
           (οι μηχανές αναζήτησης "διαβάζουν" εικόνες, όχι css backgrounds)
           και είναι πιο εύκολο να κάνεις responsive/lazy-load αργότερα. */}
       <img
-        src="/src/assets/images/hero.jpg"
+        src={heroImage}
         alt="Nostos Ritual - Greek tsipouro bottle by the sea at sunset"
         className="hero-image"
       />
