@@ -1,0 +1,21 @@
+.hero-section {
+  position: relative;
+  width: 100%;
+  line-height: 0;
+}
+
+.hero-image {
+  width: 100%;
+  height: 100vh;
+  object-fit: cover;
+}
+
+/* ΝΕΟ: σε κινητό, 100vh μπορεί να είναι υπερβολικά ψηλό (ειδικά σε landscape
+   phones, ή όταν η μπάρα διεύθυνσης του browser "τρώει" ύψος). Μειώνουμε
+   λίγο ώστε ο επισκέπτης να βλέπει και υπόδειξη ότι υπάρχει περιεχόμενο
+   και μετά το hero, χωρίς να χρειάζεται να κάνει scroll "στα τυφλά". */
+@media (max-width: 768px) {
+  .hero-image {
+    height: 70vh;
+  }
+}

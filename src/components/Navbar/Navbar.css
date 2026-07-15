@@ -1,0 +1,64 @@
+.custom-navbar {
+  top: 0;
+  z-index: 10;
+  padding: 24px 40px;
+  margin-top: 20px;
+}
+
+.logo-icon {
+  width: auto;
+  height: 60px;
+}
+
+.logo-subtitle {
+  font-size: 0.6rem;
+  letter-spacing: 4px;
+  font-family: var(--font-body);
+}
+
+.nav-link-custom {
+  color: var(--gold-light);
+  text-decoration: none;
+  font-family: "Times-normal";
+  font-size: 0.8rem;
+  letter-spacing: 1px;
+  font-weight: 400;
+}
+
+.nav-link-custom:hover {
+  color: var(--text-light);
+}
+
+.logo-centered {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.bibi-pos {
+  margin-right: 20px;
+}
+
+.bibi-size {
+  font-size: 1.5rem;
+}
+
+@media (max-width: 1100px) {
+  .nav-link-custom {
+    font-size: 0.65rem;
+  }
+}
+
+/* ΝΕΟ: σε κινητό, τα links/icons ήδη κρύβονται (d-none d-lg-flex στο JSX),
+   οπότε μένει μόνο το λογότυπο - το μικραίνουμε λίγο και μειώνουμε padding
+   ώστε να μην πιάνει υπερβολικό χώρο πάνω από το hero. */
+@media (max-width: 768px) {
+  .custom-navbar {
+    padding: 16px 20px;
+    margin-top: 0;
+  }
+
+  .logo-icon {
+    height: 44px;
+  }
+}

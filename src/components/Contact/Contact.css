@@ -1,0 +1,131 @@
+.contact-section {
+  margin-top: 250px;
+  padding: 20px 0;
+  min-height: 500px;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.contact-form-wrapper {
+  position: relative;
+  padding: 80px 150px 20px 0px;
+  color: var(--text-light);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.contact-title {
+  font-family: "Times-bold";
+  font-size: clamp(1.2rem, 3vw, 1.5rem);
+  font-weight: 400;
+  padding-top: 15px;
+  margin-bottom: 15px;
+  text-align: center;
+  width: min(500px, 100%);
+  margin-left: auto;
+  margin-right: 0;
+}
+
+.contact-form-wrapper .form-label {
+  font-family: "Times-normal";
+  font-size: 1rem;
+  margin-bottom: 10px;
+  color: var(--text-light);
+  font-weight: 300;
+}
+
+.contact-form-wrapper .form-control {
+  background-color: transparent;
+  border: 1px solid var(--text-light);
+  color: var(--text-light);
+  border-radius: 0;
+  padding: 8px;
+  width: 100%;
+  transition: border-color 0.3s ease;
+}
+
+.contact-form-wrapper .form-control:focus {
+  background-color: transparent;
+  border-color: var(--text-light);
+  box-shadow: none;
+  color: var(--text-light);
+}
+
+.contact-form-inner {
+  width: min(500px, 100%);
+  margin-left: auto;
+}
+
+.contact-submit-btn {
+  background-color: var(--cream-bg);
+  color: var(--gold-dark);
+  border-radius: 0;
+  padding: 12px 0;
+  width: 100%;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  border: none;
+  margin-top: 20px;
+  transition: background-color 0.3s ease;
+}
+
+.contact-submit-btn:hover {
+  background-color: #ffffff;
+  color: var(--gold-dark);
+}
+
+.contact-handwritten {
+  position: absolute;
+  font-family: "Wondeur-italic";
+  text-align: center;
+  font-weight: 100;
+  font-size: 2.5rem;
+  line-height: 1.2;
+  bottom: 50px;
+  left: -250px;
+  transform: rotate(-10deg);
+}
+
+/* ============================================
+   TABLET (991px) - το section έχει πλέον λιγότερο "εισβολικό"
+   margin-top, και η φόρμα κάνει πιο λογικό padding
+   ============================================ */
+@media (max-width: 991.98px) {
+  .contact-section {
+    margin-top: 100px; /* λιγότερο κενό πριν το section, αφού σε κινητό
+                            δεν χρειάζεται τόσο μεγάλη "ανάσα" */
+  }
+
+  .contact-form-wrapper {
+    padding: 40px 24px;
+  }
+
+  .contact-handwritten {
+    display: none; /* σε tablet/mobile, με τόσο λίγο διαθέσιμο πλάτος,
+                        αυτό το χειρόγραφο σχόλιο (τοποθετημένο -250px
+                        αριστερά!) θα έβγαινε εντελώς εκτός οθόνης ή θα
+                        επικάλυπτε τη φόρμα. Πιο ασφαλές να κρυφτεί εδώ. */
+  }
+}
+
+/* ============================================
+   MOBILE (768px) - η φόρμα γίνεται πιο "στενή" και συμπαγής
+   ============================================ */
+@media (max-width: 768px) {
+  .contact-form-wrapper {
+    padding: 24px 16px;
+  }
+
+  .contact-form-inner {
+    width: 100%; /* γεμίζει πλήρως, χωρίς max-width περιορισμό */
+  }
+
+  .contact-title {
+    width: 100%;
+    margin-left: 0;
+    font-size: 1.2rem;
+  }
+}

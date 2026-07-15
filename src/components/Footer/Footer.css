@@ -1,0 +1,67 @@
+.footer-section {
+  background-color: #fde6d5;
+  color: var(--gold-dark);
+  padding-top: 15px; /* πρόσεξε: είχες κενό ("15 px") - αυτό είναι invalid CSS,
+                          το διόρθωσα */
+  border-top: 1px solid var(--gold-dark);
+  margin-top: 40px;
+}
+
+.footer-tagline {
+  font-family: var(--font-script);
+  font-size: clamp(1.1rem, 3vw, 1.6rem);
+  font-weight: 600;
+}
+
+.footer-logo-icon {
+  width: auto;
+  height: 200px;
+  margin-bottom: 19px;
+}
+
+.footer-link {
+  color: var(--gold-dark);
+  text-decoration: none;
+  font-size: 0.85rem;
+  margin-bottom: 8px;
+}
+
+.footer-link:hover {
+  color: var(--text-dark);
+}
+
+.contact-info {
+  font-family: "Times-normal";
+  font-size: 1rem;
+  line-height: 1.6;
+}
+
+.contact-info p {
+  margin-bottom: 4px;
+}
+
+.footer-text {
+  font-family: "Wondeur-normal";
+  font-size: 3rem;
+  font-weight: 400;
+}
+
+/* ============================================
+   MOBILE (768px) - το λογότυπο μικραίνει δραστικά (200px είναι
+   τεράστιο σε στενή οθόνη), και οι στήλες ήδη στοιβάζονται
+   μέσω του Bootstrap col-md-* (δεν χρειάζεται αλλαγή JSX εδώ,
+   αφού πιθανώς έχεις ήδη col-md-4 - αυτό ήδη στοιβάζεται < 768px)
+   ============================================ */
+@media (max-width: 768px) {
+  .footer-logo-icon {
+    height: 90px;
+  }
+
+  .footer-tagline {
+    text-align: center;
+  }
+
+  .footer-text {
+    font-size: 2rem;
+  }
+}

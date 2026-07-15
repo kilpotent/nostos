@@ -1,0 +1,53 @@
+@font-face {
+  font-family: "Times-normal";
+  src: url("./src/assets/fonts/UB05RUN.TTF") format("truetype");
+}
+
+@font-face {
+  font-family: "Times-bold";
+  src: url("./src/assets/fonts/UB05BUN.TTF") format("truetype");
+}
+
+@font-face {
+  font-family: "Times-italic";
+  src: url("./src/assets/fonts/UB05IUN.TTF") format("truetype");
+}
+
+@font-face {
+  font-family: "Wondeur-normal";
+  src: url("src/assets/fonts/WONDEUR-WONDEUR-REGULAR-400.OTF");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Wondeur-italic";
+  src: url("src/assets/fonts/WONDEUR-WONDEUR-REGULAR-ITALIC-400.OTF");
+}
+
+/* CSS custom properties (μεταβλητές). Το ":root" σημαίνει "ισχύει σε όλη τη σελίδα".
+   Τις χρησιμοποιούμε σαν var(--gold) μέσα σε οποιοδήποτε css αρχείο component. */
+:root {
+  --cream-bg: #fde6d5; /* το ανοιχτό ροζ-μπεζ background */
+  --gold-dark: #bc9336; /* το σκούρο χρυσό/λαδί των sections */
+  --gold-light: #bc9336; /* πιο ανοιχτό χρυσό, για τίτλους/λεπτομέρειες */
+  --text-dark: #bc9336; /* σχεδόν μαύρο-καφέ, για κείμενο πάνω σε ανοιχτό φόντο */
+  --text-light: #fde6d5; /* σχεδόν λευκό, για κείμενο πάνω σε σκούρο φόντο */
+
+  --font-heading: "Playfair Display", serif;
+  --font-body: "Poppins", sans-serif;
+}
+
+body {
+  margin: 0;
+  font-family: var(--font-body);
+  color: var(--text-dark);
+  background-color: var(--cream-bg);
+}
+
+/* Γιατί το κάνουμε αυτό: το Bootstrap βάζει box-sizing: content-box σε κάποια στοιχεία
+   by default. Το border-box κάνει τους υπολογισμούς width/height πιο προβλέψιμους
+   (το padding/border δεν προστίθενται στο width, μπαίνουν "μέσα" σε αυτό). */
+* {
+  box-sizing: border-box;
+}
