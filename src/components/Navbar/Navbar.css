@@ -43,15 +43,50 @@
   font-size: 1.5rem;
 }
 
+.navbar-toggler {
+  border-color: var(--gold-light);
+}
+
+.navbar-toggler-icon {
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba(212, 175, 105, 1)' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+}
+
 @media (max-width: 1100px) {
   .nav-link-custom {
     font-size: 0.65rem;
   }
+
+  .bibi-pos {
+    margin-right: 0;
+    margin-left: 20px;
+  }
 }
 
-/* ΝΕΟ: σε κινητό, τα links/icons ήδη κρύβονται (d-none d-lg-flex στο JSX),
-   οπότε μένει μόνο το λογότυπο - το μικραίνουμε λίγο και μειώνουμε padding
-   ώστε να μην πιάνει υπερβολικό χώρο πάνω από το hero. */
+@media (max-width: 991px) {
+  .custom-navbar .container-fluid {
+    position: relative;
+  }
+
+  .navbar-collapse-wrapper {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    z-index: 20;
+  }
+
+  .navbar-collapse-inner {
+    background-color: rgba(0, 0, 0, 0.9);
+    padding: 15px;
+    border-radius: 8px;
+  }
+
+  .navbar-collapse .nav {
+    flex-direction: column;
+    gap: 12px;
+  }
+}
+
 @media (max-width: 768px) {
   .custom-navbar {
     padding: 16px 20px;
@@ -60,5 +95,11 @@
 
   .logo-icon {
     height: 44px;
+  }
+}
+
+@media (min-width: 992px) {
+  .navbar-collapse-wrapper {
+    flex: 1;
   }
 }
