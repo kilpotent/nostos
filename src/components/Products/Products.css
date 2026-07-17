@@ -6,6 +6,7 @@
 .section-title {
   font-family: "Times-normal";
   letter-spacing: 2px;
+  font-size: clamp(1.3rem, 4vw, 1.8rem);
   color: var(--gold-dark);
   font-weight: 700;
 }
@@ -22,9 +23,9 @@
   color: var(--gold-dark);
   font-family: "Times -normal";
   font-weight: 400;
-  font-size: 1.2rem;
+  font-size: clamp(0.9rem, 1.8vw, 1.3rem);
+  line-height: 1.2;
   text-align: center;
-  line-height: 100%;
 }
 
 .products-image {

@@ -60,16 +60,24 @@
 @media (max-width: 991px) {
   .navbar-toggler {
     margin-left: auto;
-    border-color: var(--gold-light);
+    border-color: var(--cream-bg);
   }
 
   .custom-navbar .container-fluid {
     position: relative;
   }
 
+  .navbar-toggler:not(.collapsed) .navbar-toggler-icon {
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba(245, 235, 220, 1)' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+  }
+
+  .navbar-toggler:focus {
+    box-shadow: 0 0 0 0.2rem rgba(212, 175, 105, 0.5);
+  }
+
   .navbar-collapse-wrapper {
     position: absolute;
-    top: 50%;
+    top: 100%;
     padding: 30px 20px;
     right: 0;
     left: auto;
@@ -95,6 +103,11 @@
   .navbar-collapse-inner .nav-link-custom {
     color: var(--cream-bg);
     font-size: 1.5rem;
+    transition: 0.3 ease;
+  }
+
+  .nav-link-custom:hover {
+    text-decoration: underline;
   }
 
   .navbar-collapse-inner .bibi-size {
