@@ -57,37 +57,24 @@
   transform: rotate(-6deg);
 }
 
-/* ============================================
-   TABLET (768px) - οι 2 εικόνες γίνονται μία κάτω από την άλλη,
-   και το textbox "βγαίνει" από absolute σε στατική ροή
-   ============================================ */
 @media (max-width: 768px) {
   .about-image-wrapper {
-    padding-bottom: 40px; /* πολύ λιγότερο - δεν χρειάζεται πια χώρος
-                              για absolute textbox που προεξέχει */
+    padding-bottom: 40px;
   }
 
   .about-image {
-    height: 350px; /* μικρότερο ύψος ανά εικόνα, αφού θα είναι 2 τώρα
-                        η μία πάνω στην άλλη αντί δίπλα-δίπλα */
+    height: auto;
   }
 
-  /* Το Bootstrap col-6 col-6 πρέπει να γίνει col-12 col-12 σε mobile -
-     αυτό γίνεται στο JSX (θα σου δείξω παρακάτω), όχι εδώ στο CSS */
-
   .about-textbox {
-    /* Ακυρώνουμε ΟΛΟ το absolute positioning trick */
     position: static;
     transform: none;
     width: 100%;
     max-width: 100%;
-    border-radius: 0; /* το στρογγυλεμένο πάνω μέρος δεν έχει νόημα πια
-                          αφού δεν "κάθεται" πάνω σε εικόνα - το βγάζουμε */
-    padding: 32px 24px;
+    border-radius: 0;
   }
 
   .about-handwritten {
-    /* Ίδια λογική - από absolute (πάνω σε εικόνα) σε static (μετά το κείμενο) */
     position: static;
     transform: none;
     margin-top: 24px;

@@ -36,15 +36,11 @@
 }
 
 .bibi-pos {
-  margin-right: 20px;
+  margin-right: 0;
 }
 
 .bibi-size {
   font-size: 1.5rem;
-}
-
-.navbar-toggler {
-  border-color: var(--gold-light);
 }
 
 .navbar-toggler-icon {
@@ -58,32 +54,55 @@
 
   .bibi-pos {
     margin-right: 0;
-    margin-left: 20px;
   }
 }
 
 @media (max-width: 991px) {
+  .navbar-toggler {
+    margin-left: auto;
+    border-color: var(--gold-light);
+  }
+
   .custom-navbar .container-fluid {
     position: relative;
   }
 
   .navbar-collapse-wrapper {
     position: absolute;
-    top: 100%;
-    left: 0;
+    top: 50%;
+    padding: 30px 20px;
+    right: 0;
+    left: auto;
     width: 100%;
     z-index: 20;
   }
 
   .navbar-collapse-inner {
-    background-color: rgba(0, 0, 0, 0.9);
-    padding: 15px;
-    border-radius: 8px;
+    background-color: var(--gold-light);
+    padding: 20px;
+    text-align: center;
+    align-items: center;
+    border-radius: 10px;
   }
 
   .navbar-collapse .nav {
     flex-direction: column;
-    gap: 12px;
+    padding: 25px;
+    gap: 50px;
+    align-items: center;
+  }
+
+  .navbar-collapse-inner .nav-link-custom {
+    color: var(--cream-bg);
+    font-size: 1.5rem;
+  }
+
+  .navbar-collapse-inner .bibi-size {
+    font-size: 2rem;
+  }
+
+  .bibi-pos {
+    padding-top: 15px;
   }
 }
 

@@ -9,14 +9,14 @@ function About() {
           όχι πια ολόκληρο το section */}
       <div className="about-image-wrapper">
         <div className="row g-0">
-          <div className="col-6 col-md-6">
+          <div className="col-12 col-md-6">
             <img
               src={vineyardsImage}
               alt="Greek vineyard landscape at sunrise"
               className="about-image"
             />
           </div>
-          <div className="col-6 col-md-6">
+          <div className="col-12 col-md-6">
             <img
               src={drunkpaImage}
               alt="Traditional Greek tavern scene"
